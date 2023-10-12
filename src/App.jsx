@@ -33,11 +33,11 @@ export default function App() {
       <nav>
         <img src="/badge-wc.svg"/>
         <ul className="nav-list">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
       <div className="hero-container">
@@ -47,7 +47,7 @@ export default function App() {
                 <h2>STEPHEN WALTERS</h2>
                 <h1>Aspiring Web Developer in Atlanta</h1>
             </div>
-            <button>Get In Touch</button>
+            <button className='header-btn'>Get In Touch</button>
         </div>
             <div className="hero-image">
                 <img src="/Hero.png"/>
@@ -58,7 +58,7 @@ export default function App() {
     <section className="about" id="about">
         <div className="section-container">
             <h4>About</h4>
-            <p>I'm Stephen Walters, a dynamic professional based in Metro Atlanta, currently embarking on an exciting career transition from marketing to front-end web development. With a background in marketing, I bring a unique perspective to the world of web development, combining my passion for creativity and design with my newfound love for coding. I thrive on challenges and take immense pleasure in problem-solving, which has proven to be a valuable asset in both my previous marketing role and my current journey into web development. <br/><br/>
+            <p className='about-para'>I'm Stephen Walters, a dynamic professional based in Metro Atlanta, currently embarking on an exciting career transition from marketing to front-end web development. With a background in marketing, I bring a unique perspective to the world of web development, combining my passion for creativity and design with my newfound love for coding. I thrive on challenges and take immense pleasure in problem-solving, which has proven to be a valuable asset in both my previous marketing role and my current journey into web development. <br/><br/>
 
             When I'm not immersed in the world of coding, you can find me enjoying quality time with my wonderful family – my loving wife and our adorable daughters, not to mention our furry companion, Brody, who adds an extra layer of joy to our lives. Beyond my professional pursuits and family life, I have a deep passion for running. Whether it's pounding the pavement in the early morning or participating in local races, running provides me with a sense of accomplishment and inner peace, allowing me to recharge and tackle new challenges in both my career and personal life. <br/><br/>
 
@@ -66,7 +66,7 @@ export default function App() {
         </div>
     </section>
     
-    <section className="tech-stack">
+    <section className="tech-stack" id="skills">
         <div className="section-container">
         <h4>Tech Stack</h4>
         <div className="tech-stack-tile-container">
@@ -114,7 +114,7 @@ export default function App() {
         </div>
     </section>
     
-    <section className="resume">
+    <section className="resume" id="experience">
         <div className="section-container">
             <h4>Experience</h4>
             <div className="resume-container">
@@ -128,10 +128,12 @@ export default function App() {
                     />
                 ))}
             </div>
+
+         
         </div>
     </section>
     
-    <section className="portfolio">
+    <section className="portfolio" id="projects">
         <div className="section-container">
             <h4 className="portfolio-heading">Portfolio</h4>
             <div className="portfolio-container">
@@ -151,11 +153,15 @@ export default function App() {
             </div>
             </div>
     </section>
+
     
-    <footer>
-        <div className="section-container">
-            <h2 className="footer-text">NEED AN ATLANTA WEB DEVELOPER? LET'S BUILD SOMETHING.</h2>
-            <button className="footer-btn">Get in touch</button>
+    <footer id="footer">
+        <div className="section-container footer-section">
+            <div className='footer-div-left'>
+                <h2 className="footer-text">NEED AN ATLANTA WEB DEVELOPER? LET'S BUILD SOMETHING.</h2>
+                <button className="footer-btn">Get in touch</button>
+            </div>
+            <div className='footer-div-right'>
             <ul>
                 <li>GITHUB</li>
                 <li>TWITTER</li>
@@ -163,8 +169,9 @@ export default function App() {
                 <li>CHARITY</li>
                 <li>SOURCE</li>
             </ul>
-            <p className="copyright">© Copyright 2023 − Stephen Walters</p>
+            </div>
         </div>
+            <p className="copyright">© Copyright 2023 − Stephen Walters</p>
     </footer>
   </main>
   )

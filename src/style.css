@@ -188,6 +188,9 @@ button {
     margin-top: 1rem;
     font-size: 1.25rem;
     padding: 1.5rem;
+    transition: 
+        color .5s,
+        background-color .5s;
 }
 
 .hero-image img {
@@ -229,6 +232,7 @@ p {
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+   
 }
 
 .tech-tile-wrapper {
@@ -268,42 +272,7 @@ h5 {
 
 
 
-@media (min-width: 768px) {
-    .hamburger {
-        display: none;
-    }
-    
-    .nav-list {
-        width: 450px;
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        font-weight: 300;
-        font-size: .75rem;
-        
-    }
-    
-    .hero-container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .section-container {
-        max-width: 900px;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    
-    .sidebarMenu {
-        display: none;
-    }
-    
-    .sidebarIconToggle {
-        display: none;
-    }
-    
-}
+
 
 
 
@@ -335,6 +304,7 @@ h5 {
   background-color: lightgray;
 }
 
+
 .accordion-title,
 .accordion-content {
   padding: 1rem;
@@ -342,7 +312,12 @@ h5 {
 
 .accordion-content {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: .9rem;
+  
+}
+
+.accordion-content li {
+    font-size: .9rem;
 }
 
 
@@ -351,6 +326,7 @@ h5 {
   }
   
   
+  /* portfolio */
   
   .scrolling-wrapper {
   display: flex;
@@ -359,7 +335,6 @@ h5 {
   gap: 15px;
   }
   
-  /* portfolio */
   
   .portfolio {
       padding: 0;
@@ -388,18 +363,19 @@ h5 {
 .card-image-container {
     height: 140px;
     width: 90%;
-    background-color: #27CEC5;
+    /* background-color: #27CEC5; */
     border-radius: 20px;
     margin-top: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: url('../watchlist.png'); */
 
 }
 
 .card-image {
-    width: 60%
+    width: 60%;
 }
 
 .card-pills-container {
@@ -469,4 +445,150 @@ li {
 
 .date-text {
     font-weight: 500;
+    padding-left: 25px;
+}
+
+@media (min-width: 768px) {
+    
+    header {
+       max-width: 1000px;
+       margin: auto; 
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    
+    .nav-list {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        font-weight: 300;
+        font-size: .75rem;
+        
+    }
+
+    .nav-list li a {
+        color: white;
+        cursor: pointer;
+    }
+    
+    .hero-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    .hero-image {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.5rem;
+        max-width: 420px;
+    }
+    
+    .section-container {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .sidebarMenu {
+        display: none;
+    }
+    
+    .sidebarIconToggle {
+        display: none;
+    }
+
+    .scrolling-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* overflow-x: hidden; */
+        gap: 15px;
+        
+    }
+
+    .accordion {
+        max-width: 1000px;
+        margin: auto;
+        border-left: 1px solid black;
+      }
+
+    .portfolio-heading {
+        padding: 0;
+    }
+
+    .tech-stack-tile-container {
+        
+    }
+
+    #projects {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    #projects::after {
+        content: '';
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        height: 1px;
+        background-color: lightslategray;
+    }
+
+    .footer-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-div-left {
+
+        width: 50%;
+    }
+
+    .footer-text {
+        margin-bottom: 20px;
+        line-height: 125%;
+    }
+
+    .copyright {
+        margin: 50px;
+    }
+
+    .header-btn:hover {
+        background-color: white;
+        color: black;
+    }
+
+   .card:hover {
+    background-color: #dce9fc;
+    cursor: pointer;
+   }
+
+   .footer-btn:hover {
+    background-color: #2869CF;
+    border: 1px solid #2869CF;
+    color: white;
+   }
+
+   .about-para {
+    line-height: 200%;
+   }
+    
 }

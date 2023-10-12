@@ -8,6 +8,12 @@ export default function resume( {company, content, title, dates} ) {
     
     const [isActive, setIsActive] = React.useState(false);
     
+    // const styles = {
+    //     backgroundColor: isActive ? '#2869CF' : '#EFF4FC',
+    //     color: isActive ? 'white' : 'black',
+    // }
+
+    //set the styl here for the the bg color of the accordian if active
     
     return (
         <div>
@@ -17,7 +23,7 @@ export default function resume( {company, content, title, dates} ) {
                     <div>{company}<br/><span className="title-text">{title}</span></div>
                     <div>{isActive ? '-' : '+'}</div>
                 </div>
-                {isActive && <div className="accordion-content"><span className="date-text">{dates}</span><br/><br/>{content}</div>}
+                {isActive && <div className="accordion-content"><span className="date-text">{dates}</span><br/>{content}</div>}
                 </div>
             </div>
         </div>
