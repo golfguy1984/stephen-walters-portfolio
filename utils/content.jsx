@@ -1,11 +1,12 @@
 export const accordionData = [
     
     {  
+        id: 1,
         company: 'Tines',
         title: 'Partner Marketing Manager',
         dates: 'August 2022 - Apil 2023',
-        content: <ul>
-        <li>I worked closely with both partner and marketing leadership teams, fostering a cohesive strategy that effectively prioritized projects and led to remarkable outcomes. Together, we achieved a phenomenal 200% growth in the partner influenced pipeline, showcasing the impact of our collaborative efforts.</li>
+        content: <ul className=" list-decimal">
+        <li className=" text-green-400">I worked closely with both partner and marketing leadership teams, fostering a cohesive strategy that effectively prioritized projects and led to remarkable outcomes. Together, we achieved a phenomenal 200% growth in the partner influenced pipeline, showcasing the impact of our collaborative efforts.</li>
         
         <li> Developed and managed top-tier partner marketing programs and campaigns that effectively generated awareness of Tines value proposition among a diverse range of partners.</li>
         
@@ -14,7 +15,9 @@ export const accordionData = [
         </ul>
         
   },
-  {     company: 'TTEC',
+  {     
+        id: 2,
+        company: 'TTEC',
         title: 'Channel Marketing Manager',
         dates: 'August 2022 - Apil 2023',
         content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
@@ -22,7 +25,9 @@ export const accordionData = [
         suscipit commodi eum enim atque at? Et perspiciatis dolore iure
         voluptatem.`
   },
-  {     company: 'LivePerson',
+  {     
+        id: 3,
+        company: 'LivePerson',
         title: 'Partner Marketing Manager',
         dates: 'August 2022 - Apil 2023',
         content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
@@ -30,7 +35,9 @@ export const accordionData = [
         suscipit commodi eum enim atque at? Et perspiciatis dolore iure
         voluptatem.`
   },
-  {     company: 'Profisee',
+  {     
+        id: 4,
+        company: 'Profisee',
         title: 'Creative Director',
         dates: 'August 2022 - Apil 2023',
         content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente

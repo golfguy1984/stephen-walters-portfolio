@@ -1,6 +1,7 @@
 import React from 'react'
 import Techtile from './Techtile'
 import Resume from './Resume'
+import ResumeLg from './ResumeLg'
 import { accordionData, cardData } from '../utils/content'
 import Card from './Card'
 
@@ -117,17 +118,8 @@ export default function App() {
     <section className="resume" id="experience">
         <div className="section-container">
             <h4>Experience</h4>
-            <div className="resume-container">
-                {accordionData.map(({ company, content, title, dates }) => (
-                <Resume 
-                    key={company} 
-                    company={company} 
-                    dates={dates} 
-                    content={content} 
-                    title={title} 
-                    />
-                ))}
-            </div>
+            
+                <ResumeLg />
 
          
         </div>
@@ -176,3 +168,20 @@ export default function App() {
   </main>
   )
 }
+
+
+
+
+
+// <div className="resume-container">
+//                 {accordionData.map(({ company, content, title, dates }) => (
+//                 <Resume 
+//                     key={company} 
+//                     company={company} 
+//                     dates={dates} 
+//                     content={content} 
+//                     title={title} 
+//                     />
+//                 ))}
+
+//             </div>
