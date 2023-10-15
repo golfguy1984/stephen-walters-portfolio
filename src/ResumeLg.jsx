@@ -11,6 +11,8 @@ function ResumeLg() {
     const [selectedItemId, setSelectedItemId] = React.useState(1)
     const [isActive, setIsActive] = React.useState(false)
 
+    console.log(selectedItemId)
+
 
   return (
     <div className='flex border'>
@@ -22,19 +24,32 @@ function ResumeLg() {
             </ul>
         </div>
         <div className='w-2/3'>
-            <Transition
-                    appear={true}
-                    show={isActive}
-                    enter="transition-all ease-in-out duration-500 delay-[200ms]"
-                    enterFrom="opacity-0 translate-y-6"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition-all ease-in-out duration-500 delay-[200ms]"
+                <Transition
+                    as="div"
+                    show={selectedItemId === 1}
+                    enter="transition-opacity duration-500 delay-500"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-500 delay-500"
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                     >
-                <Content content={accordionData.find(item => item.id === selectedItemId).content} />
+                    <Content content={accordionData[0].content} />
+                </Transition>
 
-            </Transition>
+                <Transition
+                    as="div"
+                    show={selectedItemId === 2}
+                    enter="transition-opacity duration-500 delay-500"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-500 delay-500"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                    >
+                    <Content content={accordionData[1].content} />
+                </Transition>
+                
         </div>
     </div>
   )
