@@ -50,7 +50,7 @@ export default function App() {
             <button className='header-btn'>Get In Touch</button>
         </div>
             <div className="hero-image">
-                <img src="/Hero.png"/>
+                <img src="/Hero2.png"/>
             </div>
         </div>
     </header>
