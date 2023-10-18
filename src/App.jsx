@@ -4,6 +4,7 @@ import Resume from './Resume'
 import ResumeLg from './ResumeLg'
 import { accordionData, cardData } from '../utils/content'
 import Card from './Card'
+import { ContactUs } from './ContactUs'
 
 
 
@@ -15,6 +16,7 @@ export default function App() {
     
   return (
   <main>
+    <ContactUs />
     <header>
         <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"/>
         <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
