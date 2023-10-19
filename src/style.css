@@ -185,7 +185,7 @@ h2 {
     line-height: 106%;
 }
 
-button {
+.contact-btn {
     width: 100%;
     border: 1px solid white;
     border-radius: 90px;
@@ -454,6 +454,26 @@ li {
     padding-left: 25px;
 }
 
+/* form */
+
+.form-inputs{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px 10px;
+   }
+
+   
+
+   .form-btn {
+    border: 1px solid;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+   }
+
+
 @media (min-width: 768px) {
     
     header {
@@ -490,7 +510,7 @@ li {
         padding: 0;
     }
 
-    button {
+    .contact-btn {
         width: 50%;
     }
 
@@ -595,6 +615,25 @@ li {
 
    .about-para {
     line-height: 200%;
+   }
+
+ 
+
+   .form-inputs{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px 10px;
+   }
+
+   
+
+   .form-btn {
+    border: 1px solid;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
    }
     
 }

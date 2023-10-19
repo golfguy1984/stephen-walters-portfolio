@@ -1,22 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Techtile from './Techtile'
 import Resume from './Resume'
 import ResumeLg from './ResumeLg'
 import { accordionData, cardData } from '../utils/content'
 import Card from './Card'
 import { ContactUs } from './ContactUs'
-
-
+import MyModal from './Modal'
+import SideBar from './SideBar'
 
 export default function App() {
     
+const [isOpen, setIsOpen] = useState(false)
+const [clicked, setClicked] = useState(false)
 
-    
-    
+
+
+
+//set nav button to setClicked true
     
   return (
   <main>
-    <ContactUs />
+    <SideBar 
+        show={clicked}
+        close={() => setClicked(false)}
+    />
+
+    <MyModal 
+        show={isOpen}
+        close={() => setIsOpen(false)}    
+    /> 
     <header>
         <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"/>
         <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
@@ -24,6 +36,7 @@ export default function App() {
             <div className="spinner horizontal"></div>
             <div className="spinner diagonal part-2"></div>
         </label>
+        
         <div id="sidebarMenu">
             <ul className="sidebarMenuInner">
                 <li><a href="#about">About</a></li>
@@ -34,7 +47,7 @@ export default function App() {
             </ul>
         </div>
       <nav>
-        <img src="/badge-wc.svg"/>
+        <img onClick={() => setClicked(true)} src="/badge-wc.svg"/>
         <ul className="nav-list">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -50,7 +63,7 @@ export default function App() {
                 <h2>STEPHEN WALTERS</h2>
                 <h1>Aspiring Web Developer in Atlanta</h1>
             </div>
-            <button className='header-btn'>Get In Touch</button>
+            <button  onClick={() => setIsOpen(true)} className='header-btn contact-btn'>Get In Touch</button>
         </div>
             <div className="hero-image">
                 <img src="/Hero4.png"/>
@@ -153,7 +166,7 @@ export default function App() {
         <div className="section-container footer-section">
             <div className='footer-div-left'>
                 <h2 className="footer-text">NEED AN ATLANTA WEB DEVELOPER? LET'S BUILD SOMETHING.</h2>
-                <button className="footer-btn">Get in touch</button>
+                <button onClick={() => setIsOpen(true)} className="footer-btn contact-btn">Get in touch</button>
             </div>
             <div className='footer-div-right'>
             <ul>
