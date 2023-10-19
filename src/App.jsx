@@ -7,6 +7,8 @@ import Card from './Card'
 import { ContactUs } from './ContactUs'
 import MyModal from './Modal'
 import SideBar from './SideBar'
+import resumeData from './resumeData'
+import VerticalTab from './resume-components/VerticalTab'
 
 export default function App() {
     
@@ -134,7 +136,7 @@ const [clicked, setClicked] = useState(false)
         <div className="section-container">
             <h4>Experience</h4>
             
-                <ResumeLg />
+            <VerticalTab data={resumeData.jobs} />
 
          
         </div>
