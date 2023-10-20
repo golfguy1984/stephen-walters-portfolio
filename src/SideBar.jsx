@@ -5,15 +5,6 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 export default function SideBar(props) {
 
 
-// remove state here
-// add props
-// change show to props.show
-// change onClose to props.close
-// change onClick to props.close
-
-
-//   const [open, setOpen] = useState(true)
-
   return (
     <Transition.Root show={props.show} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={props.close}>
@@ -66,13 +57,20 @@ export default function SideBar(props) {
                   <div className="flex h-full flex-col overflow-y-scroll bg-[#2869CF] py-6 shadow-xl">
                     <div className="px- sm:px-6">
                       <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                        Panel title
+                        {/* Panel title */}
                       </Dialog.Title>
                     </div>
-                    <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                    <div className="flex justify-center relative mt-6 flex-1 px-4 sm:px-6">
                     
-                        <p>test</p>
-                      
+                        <ul className=' text-white flex flex-col items-center w-full divide-y-2'>
+                          <li onClick={props.close} className=' w-3/4 text-center text-xl pb-2'><a href="#about">About</a></li>
+                          
+                          <li className='w-3/4 text-center text-xl pb-2'>Skills</li>
+                          <li className='w-3/4 text-center text-xl pb-2'>Experience</li>
+                          <li className='w-3/4 text-center text-xl pb-2'>Projects</li>
+                          <li className='w-3/4 text-center text-xl pb-2'>Contact</li>
+                          
+                        </ul>
                         
                         {/* Your content */}  
                         

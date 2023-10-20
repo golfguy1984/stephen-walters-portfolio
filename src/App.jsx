@@ -32,7 +32,7 @@ const [clicked, setClicked] = useState(false)
         close={() => setIsOpen(false)}    
     /> 
     <header>
-        <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"/>
+        {/* <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"/>
         <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
             <div className="spinner diagonal part-1"></div>
             <div className="spinner horizontal"></div>
@@ -47,9 +47,10 @@ const [clicked, setClicked] = useState(false)
                 <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">Projects</a></li>
                 <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Contact</a></li>
             </ul>
-        </div>
+        </div> */}
       <nav>
-        <img onClick={() => setClicked(true)} src="/badge-wc.svg"/>
+        <img  src="/badge-wc.svg"/>
+        <img onClick={() => setClicked(true)} src="/hamburger.png" />
         <ul className="nav-list">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -89,8 +90,8 @@ const [clicked, setClicked] = useState(false)
         <h4>Tech Stack</h4>
         <div className="tech-stack-tile-container">
             <Techtile 
-                img="/sass.png"
-                name="Sass"
+                img="/Tailwind_CSS_Logo.svg.webp"
+                name="TailwindCSS"
                 />
             <Techtile
                 img="/React-icon.svg.png"
