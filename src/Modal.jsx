@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function MyModal(props) {
+const [formSubmitted,setFormSubmitted] = useState(false)
 
   const form = useRef();
   
@@ -12,7 +13,7 @@ export default function MyModal(props) {
   
       emailjs.sendForm('service_zjbkurb', 'template_jsxzlhr', form.current, 'itDwWhxwf5o0t_yfo')
         .then((result) => {
-            console.log(result.text);
+            setFormSubmitted(true);
         }, (error) => {
             console.log(error.text);
         });
@@ -23,7 +24,13 @@ export default function MyModal(props) {
      
 
       <Transition appear show={props.show} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={props.close}>
+        <Dialog as="div" className="relative z-10" onClose={() => {
+    props.close();
+    setTimeout(() => {
+      setFormSubmitted(false);
+      
+    }, 2000);
+}}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -52,12 +59,12 @@ export default function MyModal(props) {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 text-center"
                   >
-                    Get in touch
+                    { !formSubmitted ? "Get in touch" : "Thank You" }
                   </Dialog.Title>
-                  <div className='mb-4'>
+                  { !formSubmitted && <div className='mb-4'>
                     <p className=' text-sm px-2'>I'd love to help you with your next project. Go ahead a leave some information and i'll get back to you as soon as possible. <br/><br/>Thanks - Stephen</p>
-                  </div>
-                  <div className="mt-2">
+                  </div> }
+                  { !formSubmitted && <div className="mt-2">
                     <form className="flex flex-col" ref={form} onSubmit={sendEmail}>    
                         <input className="form-inputs rounded-md" type="text" name="user_name" placeholder='Name'/>
                         <input className="form-inputs rounded-md" type="email" name="user_email" placeholder='Email'/>
@@ -67,14 +74,19 @@ export default function MyModal(props) {
                             <button
                             type="submit"
                             className=" mx-auto rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                            //   onClick={closeModal}
+                            // onClick={set a prop true that prop runs displays a sending message that after 2 seconds says thank you we have your info and we'll get back to you}
                             value="send"
                             >
                             Got it, thanks!
                             </button>
                        
                     </form>
-                  </div>
+                  </div> }
+
+                  { formSubmitted && <div>
+                    Thank you content here
+                    have set timeout function that flips a state from true to false and false to true that shows messages.
+                  </div> }
                 </Dialog.Panel>
               </Transition.Child>
             </div>

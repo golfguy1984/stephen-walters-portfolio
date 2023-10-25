@@ -31,26 +31,9 @@ const [clicked, setClicked] = useState(false)
         show={isOpen}
         close={() => setIsOpen(false)}    
     /> 
-    <header>
-        {/* <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"/>
-        <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
-            <div className="spinner diagonal part-1"></div>
-            <div className="spinner horizontal"></div>
-            <div className="spinner diagonal part-2"></div>
-        </label>
-        
-        <div id="sidebarMenu">
-            <ul className="sidebarMenuInner">
-                <li><a href="#about">About</a></li>
-                <li><a href="https://instagram.com/plavookac" target="_blank">Skills</a></li>
-                <li><a href="https://twitter.com/plavookac" target="_blank">Experience</a></li>
-                <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">Projects</a></li>
-                <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Contact</a></li>
-            </ul>
-        </div> */}
       <nav>
         <img  src="/badge-wc.svg"/>
-        <img onClick={() => setClicked(true)} src="/hamburger.png" />
+        <img onClick={() => setClicked(true)} className="hamburger" src="/hamburger.png" />
         <ul className="nav-list">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -59,6 +42,9 @@ const [clicked, setClicked] = useState(false)
             <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
+    
+    <header>
+        
       <div className="hero-container">
         <div className="hero-text-lg-screen">
             <div className="hero-text-wrapper">
@@ -74,6 +60,7 @@ const [clicked, setClicked] = useState(false)
         </div>
     </header>
     
+    
     <section className="about" id="about">
         <div className="section-container">
             <h4>About</h4>
@@ -85,6 +72,7 @@ const [clicked, setClicked] = useState(false)
         </div>
     </section>
     
+   
     <section className="tech-stack" id="skills">
         <div className="section-container">
         <h4>Tech Stack</h4>
@@ -148,7 +136,7 @@ const [clicked, setClicked] = useState(false)
             <h4 className="portfolio-heading">Portfolio</h4>
             <div className="portfolio-container">
                 <div className="scrolling-wrapper">
-                    {cardData.map(({ name, image, code, preview, bgColor}) => (
+                    {cardData.map(({ name, image, code, preview, bgColor, pills}) => (
                     <Card 
                         key={name}
                         name = {name}
@@ -156,6 +144,7 @@ const [clicked, setClicked] = useState(false)
                         code = {code}
                         preview = {preview}
                         bgColor = {bgColor}
+                        pills={pills}
                         />
                         
                     ))}   
@@ -174,8 +163,8 @@ const [clicked, setClicked] = useState(false)
             <div className='footer-div-right'>
             <ul>
                 <li>GITHUB</li>
-                <li>TWITTER</li>
                 <li>LINKEDIN</li>
+                <li>TWITTER</li>
                 <li>CHARITY</li>
                 <li>SOURCE</li>
             </ul>
@@ -183,6 +172,7 @@ const [clicked, setClicked] = useState(false)
         </div>
             <p className="copyright">© Copyright 2023 − Stephen Walters</p>
     </footer>
+  
   </main>
   )
 }

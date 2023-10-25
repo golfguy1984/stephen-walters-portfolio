@@ -63,13 +63,11 @@ export default function SideBar(props) {
                     <div className="flex justify-center relative mt-6 flex-1 px-4 sm:px-6">
                     
                         <ul className=' text-white flex flex-col items-center w-full divide-y-2'>
-                          <li onClick={props.close} className=' w-3/4 text-center text-xl pb-2'><a href="#about">About</a></li>
-                          
-                          <li className='w-3/4 text-center text-xl pb-2'>Skills</li>
-                          <li className='w-3/4 text-center text-xl pb-2'>Experience</li>
-                          <li className='w-3/4 text-center text-xl pb-2'>Projects</li>
-                          <li className='w-3/4 text-center text-xl pb-2'>Contact</li>
-                          
+                          <li onClick={props.close} className=' w-3/4 text-center pb-2'><a className='text-xl text-white' href="#about">About</a></li>
+                          <li onClick={props.close} className=' w-3/4 text-center pb-2'><a className='text-xl text-white' href="#skills">Skills</a></li>
+                          <li onClick={props.close} className=' w-3/4 text-center pb-2'><a className='text-xl text-white' href="#experience">Experience</a></li>
+                          <li onClick={props.close} className=' w-3/4 text-center pb-2'><a className='text-xl text-white' href="#projects">Projects</a></li>
+                          <li onClick={props.close} className=' w-3/4 text-center pb-2'><a className='text-xl text-white' href="#footer">Contact</a></li>
                         </ul>
                         
                         {/* Your content */}  

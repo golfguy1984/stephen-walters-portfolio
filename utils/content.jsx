@@ -53,42 +53,48 @@ export const accordionData = [
     image: "tenzies",
     code: "https://github.com/golfguy1984/Tenzies",
     preview: "https://lovely-pony-e8f0c6.netlify.app",
-    bgColor: "#27CEC5"
+    bgColor: "#27CEC5",
+    pills: ['React', 'useState']
 },
 {
-    name: "MEME GENERATOR",
-    image: "tenzies",
+    name: "QUIZZICAL",
+    image: "./quizzical-1.png",
     code: "www.espn.com",
     preview: "www.cnn.com",
-    bgColor: "#B027CF"
+    bgColor: "#5627CE",
+    pills: ['React', 'useState', 'useEffect', "API"]
 },
 {
-    name: "TRAVEL JOURNAL",
-    image: "tenzies",
+    name: "MY PORTFOLIO",
+    image: "./my-portfolio.png",
     code: "www.espn.com",
     preview: "www.cnn.com",
-    bgColor: "#5627CE"
+    bgColor: "#B027CF",
+    pills: ['React', 'TailwindCSS', 'headlessUI']
 },
 {
     name: "MOVIE WATCHLIST",
     image: './watchlist.png',
     code: "https://github.com/golfguy1984/Watchlist",
     preview: "https://melodic-torte-b2bf4c.netlify.app/",
-    bgColor: "#27CF6D"
+    bgColor: "#27CF6D",
+    pills: ['Vanilla JS', 'API', "CRUD"]
 },
 {
     name: "UNIT CONVERTER",
     image: "./unit-converter.png",
     code: "www.espn.com",
     preview: "https://github.com/golfguy1984/unit-converter",
-    bgColor: "#27CEC5"
+    bgColor: "#27CEC5",
+    pills: ['React', 'something', 'another thing']
 },
 {
     name: "COLOR GENERATOR",
     image: "./color-gen.png",
     code: "https://github.com/golfguy1984/Colors-scheme-generator",
     preview: "https://joyful-maamoul-307e45.netlify.app",
-    bgColor: "#27CF6D"
+    bgColor: "#27CF6D",
+    pills: ['Vanilla JS', 'useState']
     
 },
 {
@@ -96,13 +102,15 @@ export const accordionData = [
     image: "./high-five.png",
     code: "www.espn.com",
     preview: "www.cnn.com",
-    bgColor: "#27CEC5"
+    bgColor: "#27CEC5",
+    pills: ['React', 'something else']
 },
 {
     name: "PSWRD GENERATOR",
     image: "./password.png",
     code: "https://github.com/golfguy1984/Password-Generator",
     preview: "https://candid-naiad-ffbb36.netlify.app/",
-    bgColor: "#B027CF"
+    bgColor: "#B027CF",
+    pills: ['Whatever', 'useState']
 }
   ]

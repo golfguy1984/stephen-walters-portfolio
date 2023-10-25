@@ -37,3 +37,11 @@
     left: 200px; /* create a media querey here, needs to be 0 for smaller screens*/
     color: #2869CF;
   }
+
+ @media (max-width: 480px) {
+
+  .section__Jobs-detail::before {
+    left: -2px; /* create a media querey here, needs to be 0 for smaller screens*/
+  }
+  
+ }

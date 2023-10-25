@@ -22,13 +22,13 @@ let resumeData = {
           position: "Channel Marketing Manager",
           period: "June 2021 - August 2022",
           details: [
-            "Develop business and marketing plans for assigned partners while aligning with sales, executive sponsors, and industry leaders.",
+            "Developed business and marketing plans for assigned partners while aligning with sales, executive sponsors, and industry leaders.",
 
-            "Drive the creation of sales enablement collateral, marketing collateral, event strategy, and digital campaigns to support joint initiatives.",
+            "Drove the creation of sales enablement collateral, marketing collateral, event strategy, and digital campaigns to support joint initiatives.",
 
             "Collaborated with Partner Account Managers to drive sales enablement and marketing communication initiatives.",
 
-            "Work with the Partner Development Managers to design sales acceleration programs and initiatives that enhance collaboration, innovation, and rapport between sales teams."
+            "Worked with the Partner Account Managers to design sales acceleration programs and initiatives that enhanced collaboration, innovation, and rapport between sales teams."
           ]
         }
       },
