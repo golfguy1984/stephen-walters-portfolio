@@ -386,9 +386,11 @@ h5 {
 
 }
 
-.card-image {
+
+
+/* .card-image {
     width: 60%;
-}
+} */
 
 .card-pills-container {
     display: flex;
@@ -485,6 +487,11 @@ li {
    }
 
 
+/* 1024 and above */
+
+/* 1024 to 768 */
+
+
 @media (min-width: 768px) {
     
     header {
@@ -540,6 +547,10 @@ li {
         justify-content: flex-end;
         margin-top: 1.5rem;
         max-width: 440px;
+    }
+
+    .hero-text-wrapper {
+        width: 600px;
     }
     
     .section-container {

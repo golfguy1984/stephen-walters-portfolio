@@ -1,5 +1,6 @@
 import React from "react";
 import "./VTcontent.css";
+import { nanoid } from 'nanoid'
 
 function VTcontent(props) {
   let data = props.data.expData;
@@ -17,7 +18,7 @@ function VTcontent(props) {
       <h4>{data.position}</h4>
       <h5>{data.period}</h5>
       {data.details.map(detail => (
-        <p className="section__Jobs-detail">{detail}</p>
+        <p key={nanoid()} className="section__Jobs-detail">{detail}</p>
       ))}
     </div>
   );

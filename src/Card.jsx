@@ -1,7 +1,8 @@
+import { nanoid } from 'nanoid'
 import React from 'react'
 
+
 export default function Card( {name, image, code, preview, bgColor, pills } ) {
-    console.log(image)
 
     return (
        <div className="card">
@@ -13,7 +14,7 @@ export default function Card( {name, image, code, preview, bgColor, pills } ) {
             <div className="card-pills-container">
                 
                 {pills.map(pill => (
-                    <div className="card-pill">
+                    <div key={nanoid()} className="card-pill">
                         <h6>{pill}</h6>
                      </div>    
                 ))}

@@ -50,7 +50,7 @@ export const accordionData = [
   export const cardData =[
     {
     name: "TENZIES",
-    image: "tenzies",
+    image: "./tenzies.png",
     code: "https://github.com/golfguy1984/Tenzies",
     preview: "https://lovely-pony-e8f0c6.netlify.app",
     bgColor: "#27CEC5",
@@ -58,7 +58,7 @@ export const accordionData = [
 },
 {
     name: "QUIZZICAL",
-    image: "./quizzical-1.png",
+    image: "./quizzical-2.png",
     code: "www.espn.com",
     preview: "www.cnn.com",
     bgColor: "#5627CE",
@@ -67,26 +67,26 @@ export const accordionData = [
 {
     name: "MY PORTFOLIO",
     image: "./my-portfolio.png",
-    code: "www.espn.com",
-    preview: "www.cnn.com",
+    code: "https://github.com/golfguy1984/stephen-walters-portfolio/tree/main/src",
+    preview: "https://genuine-starlight-e80691.netlify.app/",
     bgColor: "#B027CF",
     pills: ['React', 'TailwindCSS', 'headlessUI']
 },
 {
     name: "MOVIE WATCHLIST",
-    image: './watchlist.png',
+    image: './watchlist2.png',
     code: "https://github.com/golfguy1984/Watchlist",
     preview: "https://melodic-torte-b2bf4c.netlify.app/",
     bgColor: "#27CF6D",
-    pills: ['Vanilla JS', 'API', "CRUD"]
+    pills: ['Vanilla JS', 'API', "CRUD", "LocalStorage"]
 },
 {
     name: "UNIT CONVERTER",
-    image: "./unit-converter.png",
+    image: "./unit-converter2.png",
     code: "www.espn.com",
     preview: "https://github.com/golfguy1984/unit-converter",
     bgColor: "#27CEC5",
-    pills: ['React', 'something', 'another thing']
+    pills: ['Vanilla JS', 'something', 'another thing']
 },
 {
     name: "COLOR GENERATOR",
@@ -94,16 +94,16 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/Colors-scheme-generator",
     preview: "https://joyful-maamoul-307e45.netlify.app",
     bgColor: "#27CF6D",
-    pills: ['Vanilla JS', 'useState']
+    pills: ['Vanilla JS', 'API']
     
 },
 {
     name: "HIGH FIVE HUB",
-    image: "./high-five.png",
-    code: "www.espn.com",
-    preview: "www.cnn.com",
+    image: "./high-five2.png",
+    code: "https://github.com/golfguy1984/high-five-hub",
+    preview: "https://frolicking-torrone-617e0b.netlify.app/",
     bgColor: "#27CEC5",
-    pills: ['React', 'something else']
+    pills: ['Vanilla JS', 'Firebase']
 },
 {
     name: "PSWRD GENERATOR",
@@ -111,6 +111,6 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/Password-Generator",
     preview: "https://candid-naiad-ffbb36.netlify.app/",
     bgColor: "#B027CF",
-    pills: ['Whatever', 'useState']
+    pills: ['React', 'useState']
 }
   ]
