@@ -59,8 +59,8 @@ export const accordionData = [
 {
     name: "QUIZZICAL",
     image: "./quizzical-2.png",
-    code: "www.espn.com",
-    preview: "www.cnn.com",
+    code: "https://github.com/golfguy1984/Quizzical-3",
+    preview: "https://dashing-phoenix-97a1b5.netlify.app/",
     bgColor: "#5627CE",
     pills: ['React', 'useState', 'useEffect', "API"]
 },
