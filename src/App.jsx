@@ -117,6 +117,14 @@ const [clicked, setClicked] = useState(false)
                 img="/Bootstrap"
                 name="Bootstrap"    
                 />
+            <Techtile
+            img="/vite.png"
+            name="Vite"    
+            />
+            <Techtile
+            img="/creative-cloud.png"
+            name="Creative Cloud"    
+            />
             </div>
         </div>
     </section>

@@ -17,7 +17,7 @@ header {
 }
 
 
-/* navigation */
+/* NAVIGATION */
 
 nav {
     background-color: #2869CF;
@@ -28,22 +28,19 @@ nav {
     padding: 0 2rem;
     position: fixed;
     width: 100%;
-    z-index: 10;
-
-    
+    z-index: 10;  
 }
 
 .nav-list {
     display: none;
 }
 
-
 nav img {
     height: 50px;
     filter: brightness(0) invert(1);
 }
 
-/* Sidebar */
+/* SIDEBAR */
 
 #sidebarMenu {
 
@@ -176,6 +173,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     max-width: 320px;
 }
 
+.hero-image img {
+    width: 100%;
+}
+
 h3, h1 {
     font-weight: 300;
     font-size: 1.25rem;
@@ -203,9 +204,6 @@ h2 {
         background-color .5s;
 }
 
-.hero-image img {
-    width: 100%;
-}
 
 
 section {
@@ -286,7 +284,7 @@ h5 {
 
 
 
-/* Resume Accordian */
+/* Resume Accordian (look at removing in lieu of other solution)*/
 
 .resume-container {
     margin-top: 30px;
@@ -487,12 +485,52 @@ li {
    }
 
 
-/* 1024 and above */
+/* 1024 and 1280 */
 
 /* 1024 to 768 */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    section {
+        padding: 2rem;
+    }
+
+    .portfolio-heading {
+        padding: 0 32px;
+    }
+
+    section#projects .section-container {
+        padding-bottom: 40px;
+    }
+
+    footer {
+        padding: 32px;
+    }
+
+    .footer-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-div-left {
+
+        width: 50%;
+    }
+
+    .footer-div-right {
+
+        width: 100px;
+    }
+
+    .footer-text {
+        line-height: 125%;
+    }
+
+}
 
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) { 
     
     header {
        max-width: 1000px;
@@ -501,10 +539,8 @@ li {
 
     nav {
         opacity: 95%;
+        padding: 0 5rem;
     }
-
-
-
 
     .hamburger {
         display: none;
@@ -516,15 +552,12 @@ li {
         justify-content: space-between;
         list-style-type: none;
         font-weight: 300;
-        font-size: .75rem;
-
-        
+        font-size: .75rem; 
     }
 
     .nav-list li a {
         color: white;
         cursor: pointer;
-        
     }
 
     .nav-list li {
