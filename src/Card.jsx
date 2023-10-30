@@ -6,7 +6,7 @@ export default function Card( {name, image, code, preview, bgColor, pills } ) {
 
     return (
        <div className="card">
-            <div className="card-image-container" style={{backgroundColor: bgColor, backgroundImage: `url(${image})`}}>
+            <div onClick={() => window.open(preview)} className="card-image-container" style={{backgroundColor: bgColor, backgroundImage: `url(${image})`}}>
                 {/* <img src={image} className="card-image"/> */}
             </div>
         

@@ -32,6 +32,7 @@ const [clicked, setClicked] = useState(false)
         close={() => setIsOpen(false)}    
     /> 
       <nav>
+        <div className='nav-container'>
         <img  src="/badge-wc.svg"/>
         <img onClick={() => setClicked(true)} className="hamburger" src="/hamburger.png" />
         <ul className="nav-list">
@@ -39,8 +40,9 @@ const [clicked, setClicked] = useState(false)
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li className='blog-nav'><a href="https://medium.com/@runningmental">Blog</a></li>
         </ul>
+        </div>
       </nav>
     
     <header>

@@ -83,8 +83,8 @@ export const accordionData = [
 {
     name: "UNIT CONVERTER",
     image: "./unit-converter2.png",
-    code: "www.espn.com",
-    preview: "https://github.com/golfguy1984/unit-converter",
+    code: "https://github.com/golfguy1984/unit-converter",
+    preview: "https://incandescent-tiramisu-6d2b8f.netlify.app/",
     bgColor: "#27CEC5",
     pills: ['Vanilla JS', 'something', 'another thing']
 },

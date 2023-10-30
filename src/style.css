@@ -25,10 +25,17 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     position: fixed;
     width: 100%;
     z-index: 10;  
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
 }
 
 .nav-list {
@@ -39,6 +46,7 @@ nav img {
     height: 50px;
     filter: brightness(0) invert(1);
 }
+
 
 /* SIDEBAR */
 
@@ -207,8 +215,8 @@ h2 {
 
 
 section {
-    background-color: #EFF4FC;
-    padding: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1rem 2rem;
     border: 1px solid black;
     border-style: none;
     
@@ -350,7 +358,7 @@ h5 {
   }
   
   .portfolio-heading {
-      padding: 0 20px;
+      padding: 0 32px;
   }
   
 .portfolio-container {
@@ -381,8 +389,11 @@ h5 {
     align-items: center;
     background-size: cover;
     background-position: center;
-
+    transition: background-size 0.3s ease;
 }
+
+
+
 
 
 
@@ -431,8 +442,9 @@ a {
 }
 
 footer {
-    padding: 10px;
-    background-color: #EFF4FC;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    /* background-color: #EFF4FC; */
     padding-top: 50px;
     
 }
@@ -445,6 +457,18 @@ footer {
 .footer-btn {
     color: black;
     border: 1px solid black;
+    width: 70%;
+}
+
+.footer-section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-div-right {
+    margin-top: 40px;
 }
 
 li {
@@ -485,10 +509,11 @@ li {
    }
 
 
+
 /* 1024 and 1280 */
 
 /* 1024 to 768 */
-@media (min-width: 769px) and (max-width: 1024px) { 
+@media (min-width: 768px) and (max-width: 1024px) { 
 
     section {
         padding: 2rem;
@@ -527,6 +552,10 @@ li {
         line-height: 125%;
     }
 
+    .nav-container {
+        max-width: 1000px;
+    }
+
 }
 
 
@@ -539,7 +568,10 @@ li {
 
     nav {
         opacity: 95%;
-        padding: 0 5rem;
+    }
+
+    .nav-container {
+        max-width: 1000px;
     }
 
     .hamburger {
@@ -705,5 +737,5 @@ li {
     display: block;
     margin: 0 auto;
    }
-    
+
 }
