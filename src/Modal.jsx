@@ -66,9 +66,9 @@ const [formSubmitted,setFormSubmitted] = useState(false)
                   </div> }
                   { !formSubmitted && <div className="mt-2">
                     <form className="flex flex-col" ref={form} onSubmit={sendEmail}>    
-                        <input className="form-inputs rounded-md" type="text" name="user_name" placeholder='Name'/>
-                        <input className="form-inputs rounded-md" type="email" name="user_email" placeholder='Email'/>
-                        <textarea className="form-inputs rounded-md" name="message" placeholder='Message'/>
+                        <input className="form-inputs rounded-md" required type="text" name="user_name" placeholder='Name'/>
+                        <input className="form-inputs rounded-md" required type="email" name="user_email" placeholder='Email'/>
+                        <textarea className="form-inputs rounded-md" required name="message" placeholder='Message'/>
                         {/* <input className="form-btn" type="submit" value="Send" /> */}
                        
                             <button

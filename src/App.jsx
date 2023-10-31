@@ -33,7 +33,7 @@ const [clicked, setClicked] = useState(false)
     /> 
       <nav>
         <div className='nav-container'>
-        <img  src="/badge-wc.svg"/>
+        <img  className=" filter-none" src="/mylogo3.png"/>
         <img onClick={() => setClicked(true)} className="hamburger" src="/hamburger.png" />
         <ul className="nav-list">
             <li><a href="#about">About</a></li>
