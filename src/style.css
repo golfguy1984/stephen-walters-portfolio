@@ -1,9 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
 body { 
     margin: 0;
     background-color: #2869CF;
@@ -12,12 +6,9 @@ body {
 
 header {
     color: white;
-    padding-top: 70px;
-    
 }
 
-
-/* NAVIGATION */
+/* navigation */
 
 nav {
     background-color: #2869CF;
@@ -25,30 +16,24 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    /* padding: 0 2rem; */
-    position: fixed;
-    width: 100%;
-    z-index: 10;  
-}
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    margin: auto;
+    padding: 0 2rem;
+
+
+    
+    
 }
 
 .nav-list {
     display: none;
 }
 
+
 nav img {
     height: 50px;
     filter: brightness(0) invert(1);
 }
 
-
-/* SIDEBAR */
+/* Sidebar */
 
 #sidebarMenu {
 
@@ -181,10 +166,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     max-width: 320px;
 }
 
-.hero-image img {
-    width: 100%;
-}
-
 h3, h1 {
     font-weight: 300;
     font-size: 1.25rem;
@@ -198,7 +179,7 @@ h2 {
     line-height: 106%;
 }
 
-.contact-btn {
+button {
     width: 100%;
     border: 1px solid white;
     border-radius: 90px;
@@ -212,11 +193,14 @@ h2 {
         background-color .5s;
 }
 
+.hero-image img {
+    width: 100%;
+}
 
 
 section {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 1rem 2rem;
+    background-color: #EFF4FC;
+    padding: 1rem;
     border: 1px solid black;
     border-style: none;
     
@@ -292,7 +276,7 @@ h5 {
 
 
 
-/* Resume Accordian (look at removing in lieu of other solution)*/
+/* Resume Accordian */
 
 .resume-container {
     margin-top: 30px;
@@ -358,7 +342,7 @@ h5 {
   }
   
   .portfolio-heading {
-      padding: 0 32px;
+      padding: 0 20px;
   }
   
 .portfolio-container {
@@ -374,7 +358,6 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent !important;
 }
 
 .card-image-container {
@@ -387,25 +370,17 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-position: center;
-    transition: background-size 0.3s ease;
+    /* background-image: url('../watchlist.png'); */
+
 }
 
-
-
-
-
-
-/* .card-image {
+.card-image {
     width: 60%;
-} */
+}
 
 .card-pills-container {
     display: flex;
     width: 90%;
-    gap: 5px;
-    flex-wrap: wrap;
 }
 
 .card-pill {
@@ -421,7 +396,6 @@ h6 {
     font-weight: 300;
     margin: 0;
     padding: 2px 10px;
-    font-size: .7rem;
     
 }
 
@@ -429,9 +403,7 @@ h6 {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin-top: 0px;
-    position: absolute;
-    top: 250px;
+    margin-top: 40px;
 }
 
 a {
@@ -442,9 +414,8 @@ a {
 }
 
 footer {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 1);
-    /* background-color: #EFF4FC; */
+    padding: 10px;
+    background-color: #EFF4FC;
     padding-top: 50px;
     
 }
@@ -457,18 +428,6 @@ footer {
 .footer-btn {
     color: black;
     border: 1px solid black;
-    width: 70%;
-}
-
-.footer-section {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.footer-div-right {
-    margin-top: 40px;
 }
 
 li {
@@ -489,77 +448,7 @@ li {
     padding-left: 25px;
 }
 
-/* form */
-
-.form-inputs{
-    width: 200px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    padding: 5px 10px;
-   }
-
-   
-
-   .form-btn {
-    border: 1px solid;
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-   }
-
-
-
-/* 1024 and 1280*/
-
-/* 1024 to 768 */
-@media (min-width: 768px) and (max-width: 1024px) { 
-
-    section {
-        padding: 2rem;
-    }
-
-    .portfolio-heading {
-        padding: 0 32px;
-    }
-
-    section#projects .section-container {
-        padding-bottom: 40px;
-    }
-
-    footer {
-        padding: 32px;
-    }
-
-    .footer-section {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .footer-div-left {
-
-        width: 50%;
-    }
-
-    .footer-div-right {
-
-        width: 100px;
-    }
-
-    .footer-text {
-        line-height: 125%;
-    }
-
-    .nav-container {
-        max-width: 1000px;
-    }
-
-}
-
-
-@media (min-width: 1025px) { 
+@media (min-width: 768px) {
     
     header {
        max-width: 1000px;
@@ -567,11 +456,7 @@ li {
     }
 
     nav {
-        opacity: 95%;
-    }
-
-    .nav-container {
-        max-width: 1000px;
+        padding: 0;
     }
 
     .hamburger {
@@ -584,17 +469,13 @@ li {
         justify-content: space-between;
         list-style-type: none;
         font-weight: 300;
-        font-size: .75rem; 
+        font-size: .75rem;
+        
     }
 
     .nav-list li a {
         color: white;
         cursor: pointer;
-    }
-
-    .nav-list li {
-        padding-top: 0;
-        
     }
     
     .hero-container {
@@ -603,7 +484,7 @@ li {
         padding: 0;
     }
 
-    .contact-btn {
+    button {
         width: 50%;
     }
 
@@ -612,10 +493,6 @@ li {
         justify-content: flex-end;
         margin-top: 1.5rem;
         max-width: 440px;
-    }
-
-    .hero-text-wrapper {
-        width: 600px;
     }
     
     .section-container {
@@ -685,11 +562,6 @@ li {
         width: 50%;
     }
 
-    .footer-div-right {
-
-        width: 100px;
-    }
-
     .footer-text {
         margin-bottom: 20px;
         line-height: 125%;
@@ -718,24 +590,5 @@ li {
    .about-para {
     line-height: 200%;
    }
-
- 
-
-   .form-inputs{
-    width: 200px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    padding: 5px 10px;
-   }
-
-   
-
-   .form-btn {
-    border: 1px solid;
-    width: 200px;
-    display: block;
-    margin: 0 auto;
-   }
-
+    
 }

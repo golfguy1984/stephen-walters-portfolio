@@ -1,52 +1,45 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Techtile from './Techtile'
 import Resume from './Resume'
-import ResumeLg from './ResumeLg'
 import { accordionData, cardData } from '../utils/content'
 import Card from './Card'
-import { ContactUs } from './ContactUs'
-import MyModal from './Modal'
-import SideBar from './SideBar'
-import resumeData from './resumeData'
-import VerticalTab from './resume-components/VerticalTab'
+
+
 
 export default function App() {
     
-const [isOpen, setIsOpen] = useState(false)
-const [clicked, setClicked] = useState(false)
 
-
-
-
-//set nav button to setClicked true
+    
+    
     
   return (
   <main>
-    <SideBar 
-        show={clicked}
-        close={() => setClicked(false)}
-    />
-
-    <MyModal 
-        show={isOpen}
-        close={() => setIsOpen(false)}    
-    /> 
+    <header>
+        <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu"/>
+        <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
+            <div className="spinner diagonal part-1"></div>
+            <div className="spinner horizontal"></div>
+            <div className="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul className="sidebarMenuInner">
+                <li><a href="#about">About</a></li>
+                <li><a href="https://instagram.com/plavookac" target="_blank">Skills</a></li>
+                <li><a href="https://twitter.com/plavookac" target="_blank">Experience</a></li>
+                <li><a href="https://www.youtube.com/channel/UCDfZM0IK6RBgud8HYGFXAJg" target="_blank">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/plavookac/" target="_blank">Contact</a></li>
+            </ul>
+        </div>
       <nav>
-        <div className='nav-container'>
-        <img  src="/badge-wc.svg"/>
-        <img onClick={() => setClicked(true)} className="hamburger" src="/hamburger.png" />
+        <img src="/badge-wc.svg"/>
         <ul className="nav-list">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li className='blog-nav'><a href="https://medium.com/@runningmental">Blog</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
-        </div>
       </nav>
-    
-    <header>
-        
       <div className="hero-container">
         <div className="hero-text-lg-screen">
             <div className="hero-text-wrapper">
@@ -54,14 +47,13 @@ const [clicked, setClicked] = useState(false)
                 <h2>STEPHEN WALTERS</h2>
                 <h1>Aspiring Web Developer in Atlanta</h1>
             </div>
-            <button  onClick={() => setIsOpen(true)} className='header-btn contact-btn'>Get In Touch</button>
+            <button className='header-btn'>Get In Touch</button>
         </div>
             <div className="hero-image">
-                <img src="/Hero4.png"/>
+                <img src="/Hero2.png"/>
             </div>
         </div>
     </header>
-    
     
     <section className="about" id="about">
         <div className="section-container">
@@ -74,14 +66,13 @@ const [clicked, setClicked] = useState(false)
         </div>
     </section>
     
-   
     <section className="tech-stack" id="skills">
         <div className="section-container">
         <h4>Tech Stack</h4>
         <div className="tech-stack-tile-container">
             <Techtile 
-                img="/Tailwind_CSS_Logo.svg.webp"
-                name="TailwindCSS"
+                img="/sass.png"
+                name="Sass"
                 />
             <Techtile
                 img="/React-icon.svg.png"
@@ -119,14 +110,6 @@ const [clicked, setClicked] = useState(false)
                 img="/Bootstrap"
                 name="Bootstrap"    
                 />
-            <Techtile
-            img="/vite.png"
-            name="Vite"    
-            />
-            <Techtile
-            img="/creative-cloud.png"
-            name="Creative Cloud"    
-            />
             </div>
         </div>
     </section>
@@ -134,8 +117,17 @@ const [clicked, setClicked] = useState(false)
     <section className="resume" id="experience">
         <div className="section-container">
             <h4>Experience</h4>
-            
-            <VerticalTab data={resumeData.jobs} />
+            <div className="resume-container">
+                {accordionData.map(({ company, content, title, dates }) => (
+                <Resume 
+                    key={company} 
+                    company={company} 
+                    dates={dates} 
+                    content={content} 
+                    title={title} 
+                    />
+                ))}
+            </div>
 
          
         </div>
@@ -146,7 +138,7 @@ const [clicked, setClicked] = useState(false)
             <h4 className="portfolio-heading">Portfolio</h4>
             <div className="portfolio-container">
                 <div className="scrolling-wrapper">
-                    {cardData.map(({ name, image, code, preview, bgColor, pills}) => (
+                    {cardData.map(({ name, image, code, preview, bgColor}) => (
                     <Card 
                         key={name}
                         name = {name}
@@ -154,7 +146,6 @@ const [clicked, setClicked] = useState(false)
                         code = {code}
                         preview = {preview}
                         bgColor = {bgColor}
-                        pills={pills}
                         />
                         
                     ))}   
@@ -168,13 +159,13 @@ const [clicked, setClicked] = useState(false)
         <div className="section-container footer-section">
             <div className='footer-div-left'>
                 <h2 className="footer-text">NEED AN ATLANTA WEB DEVELOPER? LET'S BUILD SOMETHING.</h2>
-                <button onClick={() => setIsOpen(true)} className="footer-btn contact-btn">Get in touch</button>
+                <button className="footer-btn">Get in touch</button>
             </div>
             <div className='footer-div-right'>
             <ul>
                 <li>GITHUB</li>
-                <li>LINKEDIN</li>
                 <li>TWITTER</li>
+                <li>LINKEDIN</li>
                 <li>CHARITY</li>
                 <li>SOURCE</li>
             </ul>
@@ -182,24 +173,6 @@ const [clicked, setClicked] = useState(false)
         </div>
             <p className="copyright">© Copyright 2023 − Stephen Walters</p>
     </footer>
-  
   </main>
   )
 }
-
-
-
-
-
-// <div className="resume-container">
-//                 {accordionData.map(({ company, content, title, dates }) => (
-//                 <Resume 
-//                     key={company} 
-//                     company={company} 
-//                     dates={dates} 
-//                     content={content} 
-//                     title={title} 
-//                     />
-//                 ))}
-
-//             </div>
