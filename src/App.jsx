@@ -171,12 +171,11 @@ const [clicked, setClicked] = useState(false)
                 <button onClick={() => setIsOpen(true)} className="footer-btn contact-btn">Get in touch</button>
             </div>
             <div className='footer-div-right'>
-            <ul>
-                <li>GITHUB</li>
-                <li>LINKEDIN</li>
-                <li>TWITTER</li>
-                <li>CHARITY</li>
-                <li>SOURCE</li>
+            <ul className='footer-nav'>
+                <li><a href="https://github.com/golfguy1984">GITHUB</a></li>
+                <li><a href="https://www.linkedin.com/in/stephen-walters-254b468/">LINKEDIN</a></li>
+                <li><a href="https://github.com/golfguy1984/stephen-walters-portfolio/tree/main/src">SOURCE</a></li>
+                <li><a href="https://medium.com/@runningmental">BLOG</a></li>
             </ul>
             </div>
         </div>

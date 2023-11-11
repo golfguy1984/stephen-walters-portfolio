@@ -86,7 +86,7 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/unit-converter",
     preview: "https://incandescent-tiramisu-6d2b8f.netlify.app/",
     bgColor: "#27CEC5",
-    pills: ['Vanilla JS', 'something', 'another thing']
+    pills: ['Vanilla JS']
 },
 {
     name: "COLOR GENERATOR",
