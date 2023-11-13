@@ -375,6 +375,7 @@ h5 {
     flex-direction: column;
     align-items: center;
     background-color: transparent !important;
+    cursor: default !important;
 }
 
 .card-image-container {
@@ -390,6 +391,7 @@ h5 {
     background-size: cover;
     background-position: center;
     transition: background-size 0.3s ease;
+    cursor: pointer !important;
 }
 
 
