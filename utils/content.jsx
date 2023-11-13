@@ -48,14 +48,6 @@ export const accordionData = [
   ]
   
   export const cardData =[
-    {
-    name: "TENZIES",
-    image: "./tenzies.png",
-    code: "https://github.com/golfguy1984/Tenzies",
-    preview: "https://lovely-pony-e8f0c6.netlify.app",
-    bgColor: "#27CEC5",
-    pills: ['React', 'useState']
-},
 {
     name: "QUIZZICAL",
     image: "./quizzical-2.png",
@@ -65,12 +57,28 @@ export const accordionData = [
     pills: ['React', 'useState', 'useEffect', "API"]
 },
 {
-    name: "MY PORTFOLIO",
-    image: "./my-portfolio.png",
-    code: "https://github.com/golfguy1984/stephen-walters-portfolio/tree/main/src",
-    preview: "https://genuine-starlight-e80691.netlify.app/",
+    name: "VANLIFE",
+    image: "./vanlife.png",
+    code: "https://github.com/golfguy1984/van-life",
+    preview: "https://precious-hamster-17845f.netlify.app/",
     bgColor: "#B027CF",
-    pills: ['React', 'TailwindCSS', 'headlessUI']
+    pills: ['React Router', 'Firestore', 'Firebase Auth']
+},
+{
+    name: "TENZIES",
+    image: "./tenzies.png",
+    code: "https://github.com/golfguy1984/Tenzies",
+    preview: "https://lovely-pony-e8f0c6.netlify.app",
+    bgColor: "#27CEC5",
+    pills: ['React', 'useState']
+},
+{
+    name: "HIGH FIVE HUB",
+    image: "./high-five2.png",
+    code: "https://github.com/golfguy1984/high-five-hub",
+    preview: "https://frolicking-torrone-617e0b.netlify.app/",
+    bgColor: "#27CEC5",
+    pills: ['Vanilla JS', 'Firebase']
 },
 {
     name: "MOVIE WATCHLIST",
@@ -79,14 +87,6 @@ export const accordionData = [
     preview: "https://melodic-torte-b2bf4c.netlify.app/",
     bgColor: "#27CF6D",
     pills: ['Vanilla JS', 'API', "CRUD", "LocalStorage"]
-},
-{
-    name: "UNIT CONVERTER",
-    image: "./unit-converter2.png",
-    code: "https://github.com/golfguy1984/unit-converter",
-    preview: "https://incandescent-tiramisu-6d2b8f.netlify.app/",
-    bgColor: "#27CEC5",
-    pills: ['Vanilla JS']
 },
 {
     name: "COLOR GENERATOR",
@@ -98,13 +98,14 @@ export const accordionData = [
     
 },
 {
-    name: "HIGH FIVE HUB",
-    image: "./high-five2.png",
-    code: "https://github.com/golfguy1984/high-five-hub",
-    preview: "https://frolicking-torrone-617e0b.netlify.app/",
+    name: "UNIT CONVERTER",
+    image: "./unit-converter2.png",
+    code: "https://github.com/golfguy1984/unit-converter",
+    preview: "https://incandescent-tiramisu-6d2b8f.netlify.app/",
     bgColor: "#27CEC5",
-    pills: ['Vanilla JS', 'Firebase']
+    pills: ['Vanilla JS']
 },
+
 {
     name: "PSWRD GENERATOR",
     image: "./password.png",

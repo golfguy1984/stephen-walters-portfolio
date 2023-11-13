@@ -390,10 +390,9 @@ h5 {
     align-items: center;
     background-size: cover;
     background-position: center;
-    transition: background-size 0.3s ease;
+    transition: background-size .3s ease-in-out;
     cursor: pointer !important;
 }
-
 
 
 
