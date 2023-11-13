@@ -55,7 +55,7 @@ export const accordionData = [
     preview: "https://dashing-phoenix-97a1b5.netlify.app/",
     bgColor: "#5627CE",
     pills: ['React', 'useState', 'useEffect', "API"],
-    description: "Quizzical allows users to pull questions from the OMDb API for several different catagories"
+    description: "Quizzical allows users to pull questions from the OMDb API for several different catagories."
 },
 {
     name: "VANLIFE",
@@ -64,7 +64,7 @@ export const accordionData = [
     preview: "https://precious-hamster-17845f.netlify.app/",
     bgColor: "#B027CF",
     pills: ['React Router', 'Firestore', 'Firebase Auth'],
-    description: "Vanlife is a fully functional single page app that shows off the power of React Router"
+    description: "Vanlife is a fully functional single page app that shows off the power of React Router."
 },
 {
     name: "TENZIES",
@@ -73,7 +73,7 @@ export const accordionData = [
     preview: "https://lovely-pony-e8f0c6.netlify.app",
     bgColor: "#27CEC5",
     pills: ['React', 'useState'],
-    description: "Tenzies is a fun game where users try to get all matching die in the fewest number of rolls"
+    description: "Tenzies is a fun game where users try to get all matching die in the fewest number of rolls."
 },
 {
     name: "HIGH FIVE HUB",
@@ -82,7 +82,7 @@ export const accordionData = [
     preview: "https://frolicking-torrone-617e0b.netlify.app/",
     bgColor: "#27CEC5",
     pills: ['Vanilla JS', 'Firebase'],
-    description: "High five hub is allows users to send and recieve accolades"
+    description: "High five hub allows users to send and recieve accolades."
 },
 {
     name: "MOVIE WATCHLIST",
