@@ -54,7 +54,8 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/Quizzical-3",
     preview: "https://dashing-phoenix-97a1b5.netlify.app/",
     bgColor: "#5627CE",
-    pills: ['React', 'useState', 'useEffect', "API"]
+    pills: ['React', 'useState', 'useEffect', "API"],
+    description: "Quizzical allows users to pull questions from the OMDb API for several different catagories"
 },
 {
     name: "VANLIFE",
@@ -62,7 +63,8 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/van-life",
     preview: "https://precious-hamster-17845f.netlify.app/",
     bgColor: "#B027CF",
-    pills: ['React Router', 'Firestore', 'Firebase Auth']
+    pills: ['React Router', 'Firestore', 'Firebase Auth'],
+    description: "Vanlife is a fully functional single page app that shows off the power of React Router"
 },
 {
     name: "TENZIES",
@@ -70,7 +72,8 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/Tenzies",
     preview: "https://lovely-pony-e8f0c6.netlify.app",
     bgColor: "#27CEC5",
-    pills: ['React', 'useState']
+    pills: ['React', 'useState'],
+    description: "Tenzies is a fun game where users try to get all matching die in the fewest number of rolls"
 },
 {
     name: "HIGH FIVE HUB",
@@ -78,7 +81,8 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/high-five-hub",
     preview: "https://frolicking-torrone-617e0b.netlify.app/",
     bgColor: "#27CEC5",
-    pills: ['Vanilla JS', 'Firebase']
+    pills: ['Vanilla JS', 'Firebase'],
+    description: "High five hub is allows users to send and recieve accolades"
 },
 {
     name: "MOVIE WATCHLIST",
@@ -86,7 +90,8 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/Watchlist",
     preview: "https://melodic-torte-b2bf4c.netlify.app/",
     bgColor: "#27CF6D",
-    pills: ['Vanilla JS', 'API', "CRUD", "LocalStorage"]
+    pills: ['Vanilla JS', 'API', "CRUD", "LocalStorage"],
+    description: "Users can search for thier favorite flix and save them to their watchlist"
 },
 {
     name: "COLOR GENERATOR",
@@ -94,7 +99,8 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/Colors-scheme-generator",
     preview: "https://joyful-maamoul-307e45.netlify.app",
     bgColor: "#27CF6D",
-    pills: ['Vanilla JS', 'API']
+    pills: ['Vanilla JS', 'API'],
+    description: "Select the perfect color scheme with this app. Choose a color and the app does the rest."
     
 },
 {
@@ -103,7 +109,8 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/unit-converter",
     preview: "https://incandescent-tiramisu-6d2b8f.netlify.app/",
     bgColor: "#27CEC5",
-    pills: ['Vanilla JS']
+    pills: ['Vanilla JS'],
+    description: "Have a race coming up? Plan your pace strategy with this simple unit converter."
 },
 
 {
@@ -112,6 +119,7 @@ export const accordionData = [
     code: "https://github.com/golfguy1984/Password-Generator",
     preview: "https://candid-naiad-ffbb36.netlify.app/",
     bgColor: "#B027CF",
-    pills: ['React', 'useState']
+    pills: ['React', 'useState'],
+    description: "Need a random password? Use this app to generate one for you."
 }
   ]

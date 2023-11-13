@@ -146,7 +146,7 @@ const [clicked, setClicked] = useState(false)
             <h4 className="portfolio-heading">Portfolio</h4>
             <div className="portfolio-container">
                 <div className="scrolling-wrapper">
-                    {cardData.map(({ name, image, code, preview, bgColor, pills}) => (
+                    {cardData.map(({ name, image, code, preview, bgColor, pills, description}) => (
                     <Card 
                         key={name}
                         name = {name}
@@ -155,6 +155,7 @@ const [clicked, setClicked] = useState(false)
                         preview = {preview}
                         bgColor = {bgColor}
                         pills={pills}
+                        description={description}
                         />
                         
                     ))}   

@@ -346,9 +346,10 @@ h5 {
   
   .scrolling-wrapper {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  /* overflow-x: auto; */
   gap: 15px;
+  justify-content: center;
   }
   
   
@@ -367,8 +368,8 @@ h5 {
 
   .card {
     flex: 0 0 auto;
-    height: 280px;
-    width: 200px;
+    height: 425px;
+    width: 322px;
     border: 2px solid #A1A1A1;
     border-radius: 33px;
     display: flex;
@@ -378,8 +379,12 @@ h5 {
     cursor: default !important;
 }
 
+.card-name {
+    margin: 5px 10px;
+}
+
 .card-image-container {
-    height: 140px;
+    height: 228px;
     width: 90%;
     /* background-color: #27CEC5; */
     border-radius: 20px;
@@ -416,6 +421,11 @@ h5 {
     border-radius: 10px;
 }
 
+.card-description {
+    margin: 0 0 15px;
+    padding: 0 20px;
+}
+
 
 
 h6 {
@@ -430,7 +440,7 @@ h6 {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin-top: 0px;
+    margin-top: 140px;
     position: absolute;
     top: 250px;
 }

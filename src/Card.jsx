@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid'
 import React from 'react'
 
 
-export default function Card( {name, image, code, preview, bgColor, pills } ) {
+export default function Card( {name, image, code, preview, bgColor, pills, description } ) {
 
     return (
        <div className="card">
@@ -11,6 +11,7 @@ export default function Card( {name, image, code, preview, bgColor, pills } ) {
             </div>
         
             <h5 className="card-name">{name}</h5>
+            <p className='card-description'>{description}</p>
             <div className="card-pills-container">
                 
                 {pills.map(pill => (
