@@ -108,8 +108,8 @@ const [clicked, setClicked] = useState(false)
                 name="Github"
                 />
             <Techtile
-                img="/vscode"
-                name="VS Code"    
+                img="/firebase_logo.png"
+                name="Firebase"    
                 />
             <Techtile
                 img="/netlify"
@@ -176,6 +176,7 @@ const [clicked, setClicked] = useState(false)
                 <li><a href="https://www.linkedin.com/in/stephen-walters-254b468/">LINKEDIN</a></li>
                 <li><a href="https://github.com/golfguy1984/stephen-walters-portfolio/tree/main/src">SOURCE</a></li>
                 <li><a href="https://medium.com/@runningmental">BLOG</a></li>
+                <li><a href="mailto: stephenrwalters@gmail.com">EMAIL</a></li>
             </ul>
             </div>
         </div>
