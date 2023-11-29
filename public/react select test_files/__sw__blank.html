@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://scrimba.com/__sw__blank.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="https://cw0.scrimba.com/" data-scrimba-internal="true">--><base href="."><script src="./__sw__head.js"></script><script src="./__sw__env.js"></script><script type="importmap-shim">{"imports":{"react":"https://ga.jspm.io/npm:react@18.2.0/dev.index.js","react-dom/client":"https://ga.jspm.io/npm:react-dom@18.2.0/dev.client.js","react-select":"https://ga.jspm.io/npm:react-select@5.8.0/dist/react-select.esm.js","react/jsx-runtime":"https://ga.jspm.io/npm:react@18.2.0/dev.jsx-runtime.js","imba":"https://unpkg.com/imba@2.0.0-alpha.218/dist/imba.mjs"},"scopes":{"https://ga.jspm.io/":{"@babel/runtime/helpers/classCallCheck":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/classCallCheck.js","@babel/runtime/helpers/createClass":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/createClass.js","@babel/runtime/helpers/createSuper":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/createSuper.js","@babel/runtime/helpers/defineProperty":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/defineProperty.js","@babel/runtime/helpers/esm/classCallCheck":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/classCallCheck.js","@babel/runtime/helpers/esm/createClass":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/createClass.js","@babel/runtime/helpers/esm/createSuper":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/createSuper.js","@babel/runtime/helpers/esm/defineProperty":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/defineProperty.js","@babel/runtime/helpers/esm/extends":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/extends.js","@babel/runtime/helpers/esm/inherits":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/inherits.js","@babel/runtime/helpers/esm/objectSpread2":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/objectSpread2.js","@babel/runtime/helpers/esm/objectWithoutProperties":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/objectWithoutProperties.js","@babel/runtime/helpers/esm/slicedToArray":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/slicedToArray.js","@babel/runtime/helpers/esm/taggedTemplateLiteral":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/taggedTemplateLiteral.js","@babel/runtime/helpers/esm/toConsumableArray":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/toConsumableArray.js","@babel/runtime/helpers/esm/typeof":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/typeof.js","@babel/runtime/helpers/extends":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/extends.js","@babel/runtime/helpers/inherits":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/inherits.js","@babel/runtime/helpers/objectSpread2":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/objectSpread2.js","@babel/runtime/helpers/objectWithoutProperties":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/objectWithoutProperties.js","@babel/runtime/helpers/slicedToArray":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/slicedToArray.js","@babel/runtime/helpers/taggedTemplateLiteral":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/taggedTemplateLiteral.js","@babel/runtime/helpers/toConsumableArray":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/toConsumableArray.js","@babel/runtime/helpers/typeof":"https://ga.jspm.io/npm:@babel/runtime@7.23.4/helpers/esm/typeof.js","@emotion/cache":"https://ga.jspm.io/npm:@emotion/cache@11.11.0/dist/emotion-cache.browser.esm.js","@emotion/hash":"https://ga.jspm.io/npm:@emotion/hash@0.9.1/dist/emotion-hash.esm.js","@emotion/memoize":"https://ga.jspm.io/npm:@emotion/memoize@0.8.1/dist/emotion-memoize.esm.js","@emotion/react":"https://ga.jspm.io/npm:@emotion/react@11.11.1/dist/emotion-react.browser.esm.js","@emotion/serialize":"https://ga.jspm.io/npm:@emotion/serialize@1.1.2/dist/emotion-serialize.browser.esm.js","@emotion/sheet":"https://ga.jspm.io/npm:@emotion/sheet@1.2.2/dist/emotion-sheet.browser.esm.js","@emotion/unitless":"https://ga.jspm.io/npm:@emotion/unitless@0.8.1/dist/emotion-unitless.esm.js","@emotion/use-insertion-effect-with-fallbacks":"https://ga.jspm.io/npm:@emotion/use-insertion-effect-with-fallbacks@1.0.1/dist/emotion-use-insertion-effect-with-fallbacks.browser.esm.js","@emotion/utils":"https://ga.jspm.io/npm:@emotion/utils@1.2.1/dist/emotion-utils.browser.esm.js","@emotion/weak-memoize":"https://ga.jspm.io/npm:@emotion/weak-memoize@0.3.1/dist/emotion-weak-memoize.esm.js","@floating-ui/core":"https://ga.jspm.io/npm:@floating-ui/core@1.5.0/dist/floating-ui.core.mjs","@floating-ui/dom":"https://ga.jspm.io/npm:@floating-ui/dom@1.5.3/dist/floating-ui.dom.mjs","@floating-ui/utils":"https://ga.jspm.io/npm:@floating-ui/utils@0.1.6/dist/floating-ui.utils.mjs","@floating-ui/utils/dom":"https://ga.jspm.io/npm:@floating-ui/utils@0.1.6/dom/dist/floating-ui.utils.dom.mjs","hoist-non-react-statics":"https://ga.jspm.io/npm:hoist-non-react-statics@3.3.2/dist/hoist-non-react-statics.cjs.js","memoize-one":"https://ga.jspm.io/npm:memoize-one@6.0.0/dist/memoize-one.esm.js","react-dom":"https://ga.jspm.io/npm:react-dom@18.2.0/dev.index.js","react-is":"https://ga.jspm.io/npm:react-is@16.13.1/dev.index.js","scheduler":"https://ga.jspm.io/npm:scheduler@0.23.0/dev.index.js","stylis":"https://ga.jspm.io/npm:stylis@4.2.0/index.js","use-isomorphic-layout-effect":"https://ga.jspm.io/npm:use-isomorphic-layout-effect@1.1.2/dist/use-isomorphic-layout-effect.browser.esm.js"}}}</script><style scrimba-base-css="">/*§SR§BASECSS§START*//* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+body {
+  background-color: white;
+  cursor: default;
+  box-sizing: border-box;
+}
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+
+html {
+  font-family: sans-serif;
+
+  line-height: 1.15;
+
+  -ms-text-size-adjust: 100%;
+
+  -webkit-text-size-adjust: 100%;
+
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+figcaption,
+figure,
+main {
+
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+
+  height: 0;
+
+  overflow: visible;
+
+}
+
+pre {
+  font-family: monospace, monospace;
+
+  font-size: 1em;
+
+}
+
+
+a {
+  background-color: transparent;
+
+  -webkit-text-decoration-skip: objects;
+
+}
+
+a.__active/**/,
+a.__hover/**/ {
+  outline-width: 0;
+}
+
+abbr[title] {
+  border-bottom: none;
+
+  text-decoration: underline;
+
+  text-decoration: underline dotted;
+
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+
+  font-size: 1em;
+
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+
+  font-size: 100%;
+
+  line-height: 1.15;
+
+  margin: 0;
+
+}
+
+button,
+input {
+
+  overflow: visible;
+}
+
+button,
+select {
+
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  box-sizing: border-box;
+
+  color: inherit;
+
+  display: table;
+
+  max-width: 100%;
+
+  padding: 0;
+
+  white-space: normal;
+
+}
+
+progress {
+  display: inline-block;
+
+  vertical-align: baseline;
+
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+
+  padding: 0;
+
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+
+  outline-offset: -2px;
+
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+
+  font: inherit;
+
+}
+
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+
+[hidden] {
+  display: none;
+}
+input.__focus/**/,
+input.__focus {
+  outline: 4px solid rgba(117, 170, 255, 0.5);
+}
+button.__focus/**/,
+button.__focus {
+  outline: 4px solid rgba(117, 170, 255, 0.5);
+}
+button.__active/**/,
+button.__active {
+  -ms-transform: scale(0.97);
+      transform: scale(0.97);
+}
+::-moz-selection {
+  background-color: #75aaff;
+}
+::selection {
+  background-color: #75aaff;
+}
+
+noscript {
+  display: none !important;
+}/*§SR§END*/</style><script>SCRIMBA_REQUEST = {"isHistoryNavigation":false,"method":"GET","state":{"history":[0,["/index.html"]],"tracker":"https://scrimba.com/__sw__tracker.js"}}</script><script src="./__sw__tracker.js"></script>
+    <!--$head$-->
+        <style rel="stylesheet" href="/style.css" scrimba-live="/style.css">/*SCRIMBA:IGNORE:START*/body { }/*SCRIMBA:IGNORE:END*/</style>
+    <style data-emotion="css" data-s=""><!--§S§B--></style></head>
+    <body data-new-gr-c-s-check-loaded="14.1142.0" data-gr-ext-installed=""><!--$body$--><script async="" src="./es-module-shims.js"></script>
+        <div id="root"><div class=" css-b62m3t-container"><span id="react-select-2-live-region" class="css-7pg0cj-a11yText"></span><span aria-live="polite" aria-atomic="false" aria-relevant="additions text" role="log" class="css-7pg0cj-a11yText"><span id="aria-selection"></span><span id="aria-focused">Sports, 1 of 4.</span><span id="aria-results">4 results available.</span><span id="aria-guidance">Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu, press Tab to select the option and exit the menu.</span></span><div class=" css-t3ipsp-control"><div class=" css-hlgwow"><div class=" css-1jqq78o-placeholder" id="react-select-2-placeholder">Select...</div><div class=" css-19bb58m" data-value=""><input class="" autocapitalize="none" autocomplete="off" autocorrect="off" id="react-select-2-input" spellcheck="false" tabindex="0" type="text" aria-autocomplete="list" aria-expanded="true" aria-haspopup="true" role="combobox" aria-describedby="react-select-2-placeholder" value="" style="color: inherit; background: 0px center; opacity: 1; width: 100%; grid-area: 1 / 2; font: inherit; min-width: 2px; border: 0px; margin: 0px; outline: 0px; padding: 0px;" aria-controls="react-select-2-listbox"></div></div><div class=" css-1wy0on6"><span class=" css-1u9des2-indicatorSeparator"></span><div class=" css-15lsz6c-indicatorContainer" aria-hidden="true"><svg height="20" width="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" class="css-8mmkcg"><path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path></svg></div></div></div><div class=" css-1nmdiq5-menu"><div class=" css-qr46ko" role="listbox" aria-multiselectable="false" id="react-select-2-listbox"><div class=" css-948eft-option" aria-disabled="false" id="react-select-2-option-0" tabindex="-1" role="option">Sports</div><div class=" css-gs8t6d-option" aria-disabled="false" id="react-select-2-option-1" tabindex="-1" role="option">Entertainment</div><div class=" css-gs8t6d-option" aria-disabled="false" id="react-select-2-option-2" tabindex="-1" role="option">Movies</div><div class=" css-gs8t6d-option" aria-disabled="false" id="react-select-2-option-3" tabindex="-1" role="option">Art</div></div></div></div></div>
+        <script src="./index.jsx" type="module-shim"></script>
+    
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

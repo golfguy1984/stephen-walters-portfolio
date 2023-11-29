@@ -1,0 +1,1 @@
+(() => {globalThis.process??={};globalThis.process.env??={};process.env.POLYGON_API_KEY='WLwzaViubyO4uVbKkbT2sLtDFG_DM6mp';process.env.OPENAI_API_KEY='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'; })();

@@ -52,7 +52,7 @@ const [clicked, setClicked] = useState(false)
             <div className="hero-text-wrapper">
                 <h3>Hi, my name is</h3>
                 <h2>STEPHEN WALTERS</h2>
-                <h1>Aspiring Web Developer in Atlanta</h1>
+                <h1>Web Developer | UX/UI Designer | Marketing Pro</h1>
             </div>
             <button  onClick={() => setIsOpen(true)} className='header-btn contact-btn'>Get In Touch</button>
         </div>
